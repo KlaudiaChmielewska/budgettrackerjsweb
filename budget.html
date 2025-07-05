@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+    <!-- FOR VS CODE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/alarm-clock");
+    </style>
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/lcd");
+    </style>
+
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="budget.css" />
+  </head>
+
+<body>
+  <div class="container">
+    <h1>Budget Tracker</h1>
+    <div class="finances-stats">
+      <div>
+        <p class="stats header budget">Budget</p>
+        <span id="amount">0</span>
+      </div>
+      <div>
+        <p class="stats header expenses">Expenses</p>
+        <span id="expenses-value">0</span>
+      </div>
+      <div>
+        <p class="stats header balance">Balance </p>
+        <span id="balance-amount">0</span>
+      </div>
+    </div>
+    <div class="finances-input">
+      <div class="card">
+        <div>
+          <p class="header">Enter Budget</p>
+          <div class="input-field">
+
+            <label class="input-label"> Total Amount</label>
+            <input type="number" id="total-amount" placeholder="Enter Total Amount" />
+          </div>
+        </div>
+        <button class="save-btn" id="total-amount-button">Submit</button>
+      </div>
+      <div class="card">
+        <p class="header">Enter Expenses</p>
+        <div class="input-field">
+          <label class="input-label">Item</label>
+          <input type="text" class="input-amount" id="expense-name" placeholder="Enter Item">
+        </div>
+        <div class="input-field">
+          <label class="input-label">Cost</label>
+          <input type="number" id="user-amount" class="input-amount" placeholder="Enter Cost">
+        </div>
+        <button class="save-btn" id="add-expense-button">Save</button>
+              </div>
+    </div>
+    <div class="expense-list card">
+      <p class="header">Expense List</p>
+      <ul class="item-list" id="expenses-list">
+        <li class="item-list-title"><span>Name</span><span>Cost</span><span></span></li>
+
+      </ul>
+       <button class="save-btn" id="export-csv">Export as CSV</button>
+      
+    </div>
+  </div>
+  </div>
+  </div>
+  <script src="budget.js"></script>
+</body>

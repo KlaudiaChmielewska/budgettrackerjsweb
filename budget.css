@@ -1,0 +1,113 @@
+h1 {
+  text-align: center;
+  color: #153116; /* #403860 */
+  font-family: "arial";
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  background-color: #cecbc4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  width: 50vw;
+}
+
+.finances-input {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.finances-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9af3b0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+}
+.save-btn {
+  background-color: #9af3b0;  /* light-violet #dfccfb */
+  padding: 10px 0px;
+  border-radius: 5px;
+  border: none;
+}
+input {
+  padding: 5px 3px;
+  border-radius: 3px;
+  border: 1px solid gray;
+  margin: 5px 0;
+  width: 20vw;
+}
+.input-label {
+  margin-bottom: 5px;
+  display: flex;
+}
+.input-field {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  font-weight: bold;
+  text-align: start;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.remove-btn {
+  background: #dc0000;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  padding-bottom: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  align-self: center;
+}
+
+.expense-list {
+  margin-top: 20px;
+  justify-content: center;
+}
+
+ul#expenses-list {
+  display: flex;
+  flex-direction: column;
+}
+
+ul#expenses-list > li {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul#expenses-list > li > span {
+  display: inline-block;
+  margin: 15px 0 15px;
+}
+
+li.item-list-title {
+  font-weight: bold;
+}
